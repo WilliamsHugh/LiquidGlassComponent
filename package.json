@@ -1,0 +1,12 @@
+{
+  "name": "aera-liquid-glass",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An Apple-inspired liquid glass ambient sound landing page",
+  "scripts": {
+    "dev": "python3 -m http.server 5173",
+    "start": "python3 -m http.server 5173",
+    "check": "node --check script.js && node --check liquid-glass.js && node --check glass-optics.js",
+    "test": "node tests/optics.cjs"
+  }
+}
