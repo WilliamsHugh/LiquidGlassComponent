@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3e7ed">
+  <meta name="description" content="Aera — a little space for yourself. Explore immersive soundscapes for focus, rest, and everything in between.">
+  <title>Aera — Find your quiet.</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="liquid-glass.css">
+</head>
+<body>
+  <main>
+    <section class="hero" id="home" data-scene="dusk">
+      <div class="landscape" aria-hidden="true">
+        <div class="sky-glow"></div><div class="sun"></div><div class="ribbon ribbon-one"></div><div class="ribbon ribbon-two"></div><div class="pearl pearl-one"></div><div class="pearl pearl-two"></div>
+        <svg class="mountains" viewBox="0 0 1600 850" preserveAspectRatio="none"><defs><linearGradient id="far" x2="0" y2="1"><stop stop-color="#8d89ab"/><stop offset="1" stop-color="#b2a6ba"/></linearGradient><linearGradient id="near" x2="0" y2="1"><stop stop-color="#666781"/><stop offset="1" stop-color="#a298b0"/></linearGradient><linearGradient id="front" x2="0" y2="1"><stop stop-color="#4b536c"/><stop offset="1" stop-color="#73718d"/></linearGradient></defs><path fill="url(#far)" d="M0 420 Q120 430 240 385 T440 372 Q580 370 740 440 Q850 455 990 367 T1220 343 Q1390 420 1600 355 V850 H0Z"/><path fill="url(#near)" d="M0 490 Q150 430 285 478 Q390 524 555 470 T790 501 Q930 554 1110 462 T1410 440 L1600 483 V850 H0Z"/><path fill="url(#front)" d="M0 535 Q185 558 330 600 T650 625 Q790 623 916 577 T1190 546 Q1400 567 1600 617 V850 H0Z"/><path fill="#454d65" opacity=".7" d="M0 670 Q150 625 330 690 T620 715 Q840 664 1010 727 T1320 701 Q1470 663 1600 690 V850 H0Z"/></svg>
+        <div class="grain"></div>
+      </div>
+      <header class="header">
+        <a class="brand" href="#home" aria-label="Aera home"><span class="brand-icon">a</span>aera<span class="brand-dot">®</span></a>
+        <nav class="glass nav" aria-label="Main navigation"><a class="active" href="#home">Overview</a><a href="#spaces">Soundscapes</a><a href="#approach">Our approach</a></nav>
+        <a href="#spaces" class="header-cta">Find your space <span>↗</span></a>
+      </header>
+      <div class="hero-stage">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> A SOFTER KIND OF EVERYDAY</div>
+        <h1>A clear mind.<br>A softer <em>world.</em></h1>
+        <p>Your own little pocket of calm.<br>Beautiful sounds. A moment to breathe.<br>And space to simply be.</p>
+        <a class="glass primary-cta" href="#spaces">Find your quiet <span>↗</span></a>
+        <span class="cta-note"><span class="mini-spark">✧</span> Made for your everyday moments</span>
+        <div class="hero-proof"><div class="proof-icon">♡</div><p>A little less noise.<br><strong>A little more you.</strong></p></div>
+      </div>
+      <div class="app-showcase">
+      <div class="glass floating-widget breathe-widget"><span class="widget-symbol">✳</span><div><span class="widget-kicker">A MOMENT FOR YOU</span><strong>Just breathe.</strong><span>Inhale calm. Exhale the rest.</span></div><div class="breath-orbit"></div></div>
+      <div class="experience">
+        <div class="phone-status"><span>9:41</span><span class="phone-island"></span><span aria-label="Full signal and battery">▴ ▰</span></div>
+        <div class="app-heading"><div><span>YOUR PERSONAL SPACE</span><h2>Hello, you.</h2></div><a href="#approach" class="glass profile-button" aria-label="About your space">✳</a></div>
+        <div class="scene-caption"><span class="status-dot"></span><span>A GOOD TIME TO SLOW DOWN</span></div>
+        <div class="glass player">
+          <div class="album-art" aria-hidden="true"><span></span></div>
+          <div class="track-info"><span class="track-label">NOW IN YOUR SPACE</span><h2 id="track-title">Alpine dusk</h2><p id="track-subtitle">Soft wind · A slower state of mind</p></div>
+          <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <button class="skip-button previous" id="previous" aria-label="Previous soundscape">↤</button>
+          <button class="play-button" id="play" aria-label="Play Alpine dusk" aria-pressed="false"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m9 5 11 7-11 7z"/></svg></button>
+          <button class="skip-button next" id="next" aria-label="Next soundscape">↦</button>
+          <div class="volume-control"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4zM15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg><input id="volume" type="range" min="0" max="100" value="45" aria-label="Volume"></div>
+        </div>
+        <div class="scene-picker" role="group" aria-label="Choose a soundscape"><button class="scene active" data-scene="dusk"><span class="scene-dot dusk"></span>Alpine dusk</button><button class="scene" data-scene="ocean"><span class="scene-dot ocean"></span>Ocean air</button><button class="scene" data-scene="forest"><span class="scene-dot forest"></span>Forest rain</button></div>
+        <div class="glass app-dock"><a class="selected" href="#home" aria-label="Home"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3z"/></svg></a><a href="#spaces" aria-label="Explore soundscapes"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m16 8-2 6-6 2 2-6z"/></svg></a><button id="favorite" aria-label="Save current soundscape" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M20 5c-3-3-7-1-8 1-1-2-5-4-8-1-5 5 8 15 8 15S25 10 20 5Z"/></svg></button></div>
+        <span class="home-indicator"></span>
+      </div>
+      <div class="glass floating-widget mood-widget"><span class="widget-kicker">MAKE ROOM FOR</span><strong>A lighter mind.</strong><div class="mood-bottom"><span class="mood-flower">✿</span><span>Less rush.<br>More right now.</span><span class="widget-check">✓</span></div></div>
+      <div class="showcase-note"><span>✧</span> A small space. An entirely different feeling.</div>
+      </div>
+      </div>
+      <div class="hero-bottom"><span>DESIGNED TO HELP YOU FEEL A LITTLE MORE HUMAN.</span><a href="#spaces">A quieter world awaits <span>↓</span></a><span class="sound-status"><span class="status-dot"></span><span id="audio-status" aria-live="polite">SOUND OFF · WORLD ON PAUSE</span></span></div>
+    </section>
+    <section class="spaces-section" id="spaces">
+      <div class="section-heading"><div><span class="section-kicker">A CHANGE OF ATMOSPHERE</span><h2>Somewhere for every<br>state of mind.</h2></div><p>You don't always need to go somewhere.<br>Sometimes, you just need to feel somewhere else.</p></div>
+      <div class="space-grid">
+        <button class="space-card card-dusk" data-select="dusk"><div class="card-sun"></div><span class="card-tag">01 / FOCUS</span><div class="card-content"><div><h3>Above the noise.</h3><p>Alpine dusk · Warm & spacious</p></div><span class="card-arrow">↗</span></div></button>
+        <button class="space-card card-ocean" data-select="ocean"><div class="ocean-lines"></div><span class="card-tag">02 / RESET</span><div class="card-content"><div><h3>Let it wash away.</h3><p>Ocean air · Light & endless</p></div><span class="card-arrow">↗</span></div></button>
+        <button class="space-card card-forest" data-select="forest"><div class="forest-lines"></div><span class="card-tag">03 / UNWIND</span><div class="card-content"><div><h3>Back to your roots.</h3><p>Forest rain · Deep & grounding</p></div><span class="card-arrow">↗</span></div></button>
+      </div>
+    </section>
+    <section class="approach" id="approach"><span class="section-kicker">A LITTLE LESS. A LITTLE BETTER.</span><h2>Your attention is precious.<br><span>Give it a place to rest.</span></h2><p>No scores. No streaks. No place you need to be.<br>Just thoughtfully crafted ambient sound, and a moment that's yours.</p><a href="#home">Take a breath. Start here <span>↗</span></a></section>
+    <footer><a class="brand" href="#home"><span class="brand-icon">a</span>aera</a><span>A little space for yourself.</span><span>© <span id="year">2026</span> Aera · An independent design concept</span></footer>
+  </main>
+  <script src="script.js"></script>
+  <script src="liquid-glass.js"></script>
+</body>
+</html>
